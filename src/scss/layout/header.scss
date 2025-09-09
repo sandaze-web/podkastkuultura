@@ -1,0 +1,63 @@
+// =====================================================================================================================
+.header {
+  width: 100%;
+  padding: 16px 0;
+  &.sticky {
+    // ..стили для липкого хедера
+  }
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-select {
+    position: relative;
+    &__current {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      & i {
+        color: $--accent-color;
+        font-size: 12px;
+      }
+    }
+    &Bx {
+      display: none;
+    }
+  }
+  &-nav {
+    & ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      & li {
+        & a {
+          color: rgba(99, 102, 105, 1);
+          transition: .4s;
+
+        }
+      }
+    }
+  }
+  &-media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__phone {
+    font-weight: 500;
+    color: $--link-color;
+  }
+  &-socialsBx {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  &-logoBx {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
+// =====================================================================================================================

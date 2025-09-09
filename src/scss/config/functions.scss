@@ -1,0 +1,32 @@
+// !TO PERCENT %:
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+// !TO REM:
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
+
+@function adaptiveClampFunc($minSize, $maxSize, $minWidth: 375, $maxWidth: 1326) {
+  @if $minSize == $maxSize {
+    @return #{$minSize}px;
+  }
+
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yIntersection: $minSize - $slope * $minWidth;
+
+  @return clamp(
+          #{$minSize}px,
+          #{$yIntersection}px + #{$slope * 100}vw,
+          #{$maxSize}px
+  );
+}

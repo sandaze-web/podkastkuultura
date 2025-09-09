@@ -1,0 +1,40 @@
+$maxWidth: 1920; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$maxWidthContainer: 1326; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1326; // ширина контейнера из макета
+
+$mainOffset: 16; // отступы безопасности для контейнера
+$mainFont: 'Onest'; // !указать здесь основное семейство шрифта
+$mainWeight: 400; // !указать здесь основное начертание шрифта
+
+$headerHeight: 100;
+$footerHeight: 100;
+
+$mainRadius: rem(10);
+
+$whiteColor: #fff;
+$blackColor: #131313;
+$grayColor: #6f6f6f;
+$redColor: #ff4040;
+
+$firstAccentColor: $blackColor;
+$secondAccentColor: $redColor;
+
+$fontFamily: $mainFont, sans-serif; // Семейство шрифта по умолчанию
+$fontColor: $blackColor; // Цвет шрифта по умолчанию
+
+$fontSize: adaptiveClamp(14, 14); // Размер шрифта по умолчанию
+$fontWeight: $mainWeight; // Жирность шрифта по умолчанию
+
+$--white: rgba(255, 255, 255, 1);
+
+$--text-color: rgba(11, 16, 20, 1);
+$--text-grey: rgba(123, 126, 129, 1);
+
+$--accent-color: rgba(73, 165, 249, 1);
+
+$--link-color: $--accent-color;
+
+
+
+

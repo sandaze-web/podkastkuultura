@@ -1,0 +1,35 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title_block {
+  font-size: adaptiveClampFunc(26, 36);
+  font-weight: 700;
+  line-height: 140%;
+}
+.h1 {
+  font-size: adaptiveClampFunc(26, 41);
+  font-weight: 800;
+  line-height: 140%;
+}
+.btn {
+  padding: 8px 16px;
+  border-radius: 200px;
+  border: 1px solid transparent;
+  transition: .4s;
+}
+.primary-btn {
+  color: #fff;
+  font-weight: 700;
+  background-color: $--accent-color;
+
+}
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(227, 227, 227, 1);
+  & i {
+    transform: rotate(46deg);
+    color: $--accent-color;
+  }
+}

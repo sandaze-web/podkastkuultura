@@ -1,0 +1,76 @@
+.hero {
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  &__pretitle {
+    font-weight: 700;
+    color: $--text-grey;
+    margin-bottom: 15px;
+  }
+  &__title {
+    max-width: 400px;
+  }
+  &__subtitle {
+    margin-top: 7px;
+    color: $--text-grey;
+    max-width: 288px;
+  }
+  &-buttonBx {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 70px;
+  }
+  &__price {
+    color: $--text-grey;
+    font-weight: 700;
+    margin-top: 11px;
+  }
+  &-mediaBx {
+    width: 100%;
+    max-width: 507px;
+    height: 349px;
+    border-radius: 25px;
+    border: 1px solid rgba(227, 227, 227, 1);
+    position: relative;
+    & img, & video, & iframe {
+      border-radius: 25px;
+      overflow: hidden;
+    }
+    & p {
+      position: absolute;
+      right: calc(100% + 24px);
+      bottom: 0;
+      color: $--text-grey;
+      font-weight: 500;
+      z-index: 5;
+      &:after {
+        content: '';
+        width: 53px;
+        height: 50px;
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2253%22%20height%3D%2250%22%20viewBox%3D%220%200%2053%2050%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M2.00006%2048.5002C1.66673%2032.6669%207.1%200.600229%2051.5%201.00023%22%20stroke%3D%22%23E3E3E3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-dasharray%3D%224%204%22/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain; /* или 100% 100% */
+        display: inline-block; /* чтобы размеры применились */
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(calc(-50% + 25px), 0);
+      }
+    }
+  }
+  &__bg {
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    height: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+.studios {
+  margin-top: 20px;
+  &-titleBx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-feedback {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      & i {
+        transform: rotate(46deg);
+        color: $--accent-color;
+        font-size: 18px;
+      }
+    }
+  }
+  &-inner {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &-slide {
+    height: 654px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: .4s !important;
+    &__imgBx {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-box {
+    position: relative;
+  }
+  &-content {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: rgba(244, 247, 249, 1);
+    border-radius: 20px;
+    z-index: 2;
+    width: 100%;
+    max-width: 508px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    &-video {
+      width: 100%;
+      max-width: 146px;
+      height: 146px;
+      background-color: #eee;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    &__desc {
+      color: $--text-grey;
+
+    }
+    &-tags {
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $--text-grey;
+        & span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $--text-grey;
+          & i {
+            color: $--text-grey;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    margin-top: 30px;
+  }
+  &-nav {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    z-index: 3;
+    &-wrapper {
+      display: flex;
+      gap: 7px;
+      width: 100%;
+    }
+    &__item {
+      flex-grow: 1;
+      height: 116px;
+      width: calc(100% / var(--slides-count));
+      flex-shrink: 0;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: .4s !important;
+      cursor: pointer;
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        border: 2px solid $--accent-color;
+        opacity: 0;
+        transition: .4s;
+      }
+      &:before {
+        border: 1px solid rgba(227, 227, 227, 1);
+        opacity: 1;
+        z-index: 4;
+      }
+      &.swiper-slide-thumb-active {
+        border-color: transparent;
+        &:after {
+          opacity: 1;
+        }
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
