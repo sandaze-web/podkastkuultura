@@ -1,0 +1,114 @@
+.info {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &-main {
+    max-width: 500px;
+  }
+  &-content {
+    color: $--text-grey;
+    margin-top: 28px;
+    font-size: 16px;
+    & p, & a, & li, & span {
+      color: $--text-grey;
+      font-size: 16px;
+    }
+    & p {
+      margin-bottom: 17px;
+    }
+    & h3 {
+      margin-top: 28px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 11px;
+      & li {
+        display: flex;
+        &:before {
+          content: "";
+          width: 100%;
+          max-width: 14px;
+          height: 4px;
+          background-color: $--accent-color;
+          border-radius: 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+  &-helper {
+    max-width: 507px;
+    width: 100%;
+  }
+  &-wrapper {
+    position: relative;
+    &.arrow_to_slide:before {
+      content: '';
+      display: block;
+      width: 53px;
+      height: 56px;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='53' height='56' viewBox='0 0 53 56' fill='none'><g clip-path='url(%23clip0_11_130)'><path d='M1.01137 1.16003C0.735359 17.1588 5.23439 49.5605 41.9999 49.1563' stroke='%23E3E3E3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-dasharray='4 4'/><path d='M52.0137 48.16L35.0137 41.16L37.847 48.1598L35.0137 55.16L52.0137 48.16Z' fill='%23E3E3E3'/></g><defs><clipPath id='clip0_11_130'><rect width='53' height='55' fill='white' transform='translate(0 0.160034)'/></clipPath></defs></svg>") no-repeat center / contain;
+      position: absolute;
+      left: -130px;
+      bottom: 77px;
+    }
+  }
+  &__slide {
+    &-imgBx {
+      height: 285px;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+  }
+  &-slider {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  &-arrows {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    & .info__arrow {
+      background: rgba(244, 247, 249, 1);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  &__notice {
+    margin-top: 9px;
+    font-size: 14px;
+    color: $--text-grey;
+    & * {
+      color: $--text-grey;
+      font-size: 14px;
+    }
+  }
+  @include media(760){
+    &-inner {
+      flex-direction: column;
+    }
+  }
+}

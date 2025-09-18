@@ -1,0 +1,14 @@
+.cases {
+  &-box {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 50px 8px;
+  }
+  @include media(760){
+    &-box {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 32px;
+    }
+  }
+}

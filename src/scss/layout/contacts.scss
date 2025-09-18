@@ -1,0 +1,264 @@
+.contacts {
+  &.price_page {
+    & .contacts {
+      &-main {
+        grid-template-columns: repeat(4 ,1fr);
+      }
+      &__item {
+        &:last-child {
+          grid-column: unset;
+          grid-row: unset;
+        }
+        &-address {
+          margin-top: 0;
+        }
+        &-metroBx {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  &-titleBx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-timeBx {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &-time {
+    display: flex;
+    flex-direction: column;
+
+    & span {
+      &:first-child {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        color: $--text-grey;
+      }
+    }
+  }
+
+  &-inner {
+    margin-top: 30px;
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  &-map {
+    width: 100%;
+    max-width: 631px;
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    flex-grow: 1;
+  }
+
+  &__item {
+    border: 1px solid rgba(227, 227, 227, 1);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 120px;
+    position: relative;
+    transition: .4s $--transition;
+    &:first-child {
+      &:hover {
+        border-color: $--grey-hover;
+      }
+    }
+    &:last-child {
+      grid-column: 2; /* правая колонка */
+      grid-row: 1 / span 3; /* занимает три строки */
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &-phone {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: auto;
+    }
+
+    &.tg {
+      background: $--accent-color;
+      border: none;
+      &:hover {
+        background-color: $--accent-color-hover;
+      }
+      & .contacts__item-title {
+        color: #fff;
+      }
+      & svg {
+        transform: scale(1.5);
+      }
+      & svg, & img {
+        position: absolute;
+        max-width: 28px;
+        right: 22px;
+        bottom: 22px;
+
+        & rect {
+          fill: #fff;
+        }
+      }
+    }
+
+    &.wa {
+      background: rgba(53, 167, 71, 1);
+      border: none;
+      &:hover {
+        background: rgb(61, 193, 81);
+      }
+
+      & .contacts__item-title {
+        color: #fff;
+      }
+      & svg {
+        transform: scale(1.5);
+      }
+      & svg, & img {
+        position: absolute;
+        max-width: 28px;
+        right: 22px;
+        bottom: 22px;
+
+        & rect {
+          fill: #fff;
+        }
+      }
+    }
+
+    &-address {
+      margin-top: 49px;
+      font-size: 18px;
+      font-weight: 700;
+      max-width: 148px;
+    }
+
+    &-metroBx {
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+      grid-gap: 7px;
+    }
+
+    &-metro {
+      display: flex;
+      align-items: center;
+      & span {
+        &:nth-child(2) {
+          margin-left: 6px;
+        }
+        &.dash {
+          flex-grow: 1;
+          border: 1px dashed rgba(227, 227, 227, 1);
+          margin: 0 4px;
+        }
+      }
+      &:last-child {
+        & path {
+          fill: $--text-grey;
+        }
+      }
+    }
+    &-point {
+      position: absolute;
+      width: 26px;
+      top: 23px;
+      right: 23px;
+    }
+    &-parkingBx {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 70px;
+    }
+    &-parking {
+      width: 100%;
+      max-width: 28px;
+      height: 28px;
+      background: $--accent-color;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      border-radius: 10px;
+      &__text {
+        max-width: 120px;
+        color: $--text-grey;
+      }
+    }
+  }
+  &-map {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  &-page {
+    margin-top: 28px;
+  }
+  @include media(760) {
+    &-titleBx {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    &-inner {
+      flex-direction: column;
+    }
+    &-main {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    &__item {
+      &:last-child {
+        grid-column: unset;
+        grid-row: unset;
+      }
+      &-address {
+        margin-top: 25px;
+        max-width: unset;
+      }
+      &-metroBx {
+        margin-top: 32px;
+      }
+      &-parkingBx {
+        margin-top: 32px;
+      }
+      &-point {
+        bottom: 22px;
+        right: 22px;
+        top: auto;
+      }
+    }
+    &-map {
+      height: 300px;
+      width: 100%;
+    }
+
+    &.price_page {
+      & .contacts {
+        &-main {
+          grid-template-columns: repeat(1 ,1fr);
+        }
+      }
+    }
+  }
+}

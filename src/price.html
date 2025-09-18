@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+<body>
+@@include('html/header.html', {})
+<main class="main">
+    <div class="breadcrumb">
+        <div class="breadcrumb__container">
+            <div class="breadcrumb-inner">
+                <ul class="crumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="crumbs-list__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a class="crumbs-list__link" href="/" title="Главная" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                            <meta itemprop="position" content="0">
+                        </a>
+                    </li>
+                    <li class="crumbs-list__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a class="crumbs-list__link" href="/" title="Главная" itemprop="item">
+                            <span itemprop="name">Стоимость аренды студии</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="studio end-to-end">
+        <div class="studio__container">
+            <h1 class="studio__title h1">Стоимость аренды студии</h1>
+            <div class="studio-content content">
+                <p>Стоимость указана за аренду студии со всем необходимым оборудованием в комплектации на 3 камеры,
+                    сопровождением администратора и оператора, использование чиллаута и гримерки.
+                    <br> <br> На выходе предоставляется материал для дальнейшей пост-обработки и черновой монтаж
+                    выполненный на АТЕМ (проект Davinchi)</p>
+            </div>
+            <div class="studio-box list_studios">
+                <div class="studio__item">
+                    <div class="studio-imgBx -ibg">
+                        <img src="images/studio/1.png" alt="">
+                    </div>
+                    <div class="studio__item-wrapper">
+                        <div class="studio__item-content content">
+                            <p>Студия в классическом стиле с акцентом на топовый звук и ламповую атмосферу. Два варианта
+                                интерьера на выбор. Микрофоны Союз 017 (в классическом и эксклюзивно-черном цвете) или
+                                Shure sm7b.</p>
+                        </div>
+
+                        <div class="price_main_har">
+                            <div>
+                                Съемочная площадь: 25 м²
+                            </div>
+                            <div>
+                                Героев в кадре: до 4-х человек
+                            </div>
+                        </div>
+                        <div class="price_list">
+                            <b>Стоимость</b>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Первые 30 минут для подготовки <br>героев и настройки оборудования </p>
+                                    <span>бесплатно</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        Первые 3 часа </p>
+                                    <span>9 000 ₽/час</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        От 5 часов и далее </p>
+                                    <span>7 000 ₽/час</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        С оборудованием, но без оператора </p>
+                                    <span>5 000 ₽/час</span>
+                                </li>
+                            </ul>
+                            <button class="btn primary-btn price_list_button">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="studio__item">
+                    <div class="studio-imgBx -ibg">
+                        <img src="images/studio/2.png" alt="">
+                    </div>
+                    <div class="studio__item-wrapper">
+                        <div class="studio__item-content content">
+                            <p>Студия в классическом стиле с акцентом на топовый звук и ламповую атмосферу. Два варианта
+                                интерьера на выбор. Микрофоны Союз 017 (в классическом и эксклюзивно-черном цвете) или
+                                Shure sm7b.</p>
+                        </div>
+
+                        <div class="price_main_har">
+                            <div>
+                                Съемочная площадь: 25 м²
+                            </div>
+                            <div>
+                                Героев в кадре: до 4-х человек
+                            </div>
+                        </div>
+                        <div class="price_list">
+                            <b>Стоимость</b>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Первые 30 минут для подготовки <br>героев и настройки оборудования </p>
+                                    <span>бесплатно</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        Первые 3 часа </p>
+                                    <span>9 000 ₽/час</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        От 5 часов и далее </p>
+                                    <span>7 000 ₽/час</span>
+                                </li>
+                                <li>
+                                    <p>
+                                        С оборудованием, но без оператора </p>
+                                    <span>5 000 ₽/час</span>
+                                </li>
+                            </ul>
+                            <button class="btn primary-btn price_list_button">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price_installation">
+        <div class="price_installation__container">
+            <h2 class="title_block" data-heading-tag="H2">Стоимость монтажа подкаста</h2>
+            <div class="head_desc">
+                <p>2 серии правок, обложка и обработка звука включена в стоимость.</p>
+                <p>Монтаж материала, снятого не в нашей студии дороже на 50%.</p>
+            </div>
+            <div class="table_price">
+                <div class="head">
+                    <p>Услуги по монтажу</p>
+                    <p>Что входит в услугу?</p>
+                    <p>Сроки</p>
+                    <p>Стоимость</p>
+                </div>
+                <ul>
+                    <li>
+                        <p class="name">
+                            Базовый монтаж подкаста
+                        </p>
+                        <p class="desc">
+                            Монтаж по-камерам и синхронизация звука. Графику и музыку, ничего дополнительного не
+                            вставляем. Ничего не выкидываем, удаляем только техническую шелуху «Ну, теперь можно
+                            начинать», конечно, убираем. Фактуру самого подкаста –&nbsp;оставляем как есть. В результате
+                            получится 1 файл, в котором уже звук с микрофонов, планы героев органично переходят с общего
+                            на крупный и так далее.
+                        </p>
+                        <p class="time">
+                            1-2 дня
+                        </p>
+                        <p class="price">
+                            15 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Монтаж подкаста и тизер*
+                        </p>
+                        <p class="desc">
+                            См. пункт 1. Втором этапом, вы (клиент) смотрите что получилось и доделываем второй слой:
+                            что поставить в начало (тизер), какую нужно графику, какие отрывки переставить местами и так
+                            далее. Здесь уже нужно ваше активное участие. Тизер можем сделать на свое усмотрение.
+                            Включена обложка.
+                        </p>
+                        <p class="time">
+                            3-4 дня
+                        </p>
+                        <p class="price">
+                            25 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Монтаж, тизер и reals
+                        </p>
+                        <p class="desc">
+                            Все, что включено в п. 1-2 и 3 reals с титрами
+                        </p>
+                        <p class="time">
+                            3-4 дня
+                        </p>
+                        <p class="price">
+                            30 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Обложка
+                        </p>
+                        <p class="desc">
+                            Превью для подкаста. 2-3 варианта на выбор.
+                        </p>
+                        <p class="time">
+                            1 день
+                        </p>
+                        <p class="price">
+                            Включено / <br>отдельно 3 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Обработка звука
+                        </p>
+                        <p class="desc">
+                            Компрессия, эквализация и чистка низких шумов
+                        </p>
+                        <p class="time">
+                            1 день
+                        </p>
+                        <p class="price">
+                            Включено /<br> отдельно 50 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Фирменный стиль канала
+                        </p>
+                        <p class="desc">
+                            Референсы, изготовление уникального фирменного стиля канала (стартовая заставка, стингер,
+                            титры, подложки) и файл проекта для дальнейшего использования
+                        </p>
+                        <p class="time">
+                            3-5 дней
+                        </p>
+                        <p class="price">
+                            от 5 000 ₽
+                        </p>
+                    </li>
+                    <li>
+                        <p class="name">
+                            Рендер титров или заставок
+                        </p>
+                        <p class="desc">
+                            Простые шаблонные решения или по проекту фир.стиля канала
+                        </p>
+                        <p class="time">
+                            1 день
+                        </p>
+                        <p class="price">
+                            Бесплатно
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts section price_page">
+        <div class="contacts__container">
+            <div class="contacts-titleBx">
+                <h2 class="contacts__title title_block">Свяжитесь с нами <br>
+                    по любому вопросу</h2>
+                <div class="contacts-timeBx">
+                    <div class="contacts-timeBx__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9998 0C5.37257 0 0 5.37273 0 11.9998C0 18.6269 5.37257 24 11.9998 24C18.627 24 24 18.6269 24 11.9998C24 5.37273 18.627 0 11.9998 0ZM17.1876 14.2822H12.1002C12.083 14.2822 12.067 14.278 12.05 14.2774C12.0329 14.2782 12.017 14.2822 11.9997 14.2822C11.5414 14.2822 11.1698 13.9106 11.1698 13.4522V4.98C11.1698 4.52168 11.5414 4.15007 11.9997 4.15007C12.458 4.15007 12.8297 4.52168 12.8297 4.98V12.6223H17.1873C17.6457 12.6223 18.0173 12.9939 18.0173 13.4522C18.0173 13.9106 17.646 14.2822 17.1876 14.2822Z" fill="#49A5F9"/>
+                        </svg>
+                    </div>
+                    <div class="contacts-time">
+                        <span>Работаем с 8:00 до 24:00</span>
+                        <span>* По предварительной записи</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts-inner">
+                <div class="contacts-main">
+                    <a href="tel: +7 499 647 50 90" class="contacts__item">
+                        <div class="contacts__item-title">Позвонить</div>
+                        <div class="contacts__item-phone">+7 499 647 50 90</div>
+                    </a>
+                    <a href="#" class="contacts__item tg svg">
+                        <div class="contacts__item-title">Написать в Telegram</div>
+                        <img src="images/socials/tg.svg" alt="">
+                    </a>
+
+                    <a href="#" class="contacts__item wa svg">
+                        <div class="contacts__item-title">Написать в WhatsApp</div>
+                        <img src="images/socials/wa.svg" alt="">
+                    </a>
+
+                    <div class="contacts__item">
+                        <div class="contacts__item-address">г. Москва, улица
+                            Правды, 17/19 (1
+                            этаж)</div>
+                        <div class="contacts__item-metroBx svg">
+                            <div class="contacts__item-metro">
+                                <img src="images/icon/m.svg" alt="">
+                                <span>Белорусская </span>
+                                <span class="dash"></span>
+                                <span> 13 мин.</span>
+                            </div>
+                            <div class="contacts__item-metro">
+                                <img src="images/icon/m.svg" alt="">
+                                <span>Савеловская </span>
+                                <span class="dash"></span>
+                                <span> 10 мин.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="faq__container">
+            <h2 class="faq__title title_block">Частые вопросы (FAQ)</h2>
+            <div class="faq-inner">
+                <div class="faq-box">
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Как забронировать подкаст-студию?</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Время на подготовку к съемке и задержки</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Оплата для физических лиц</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Бронирование и оплата для юридических лиц</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Парковочные места</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__item-titleBx">
+                            <div class="faq__item-title">Передача материала и хранение</div>
+                        </div>
+                        <div class="faq__item-answer">
+                            Для бронирования студии оставьте заявку на сайте, позвоните или
+                            напишите в WhatsApp или Telegram. Мы всегда на связи с 09:00 до
+                            22:00, при этом студия работает 24/7 – те можно по-
+                            договоренности проводить съемку в любое время.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-imgBx -ibg">
+                    <img src="images/faq/main.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('html/footer.html', {})
+@@include('html/script.html', {})
+</body>
+</html> 

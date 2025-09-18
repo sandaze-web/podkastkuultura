@@ -1,0 +1,35 @@
+.breadcrumb {
+  //f324
+  margin-top: 80px;
+  &-inner {
+    & .crumbs-list {
+      display: flex;
+      align-items: center;
+      &__item {
+        display: flex;
+        align-items: center;
+        &:after {
+          content: '\f324';
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 600;
+          font-size: 8px;
+          color: $--text-grey;
+          margin: 0 8px;
+
+        }
+        &:last-child {
+          &:after {
+            content: none;
+          }
+        }
+      }
+      &__link {
+        color: $--text-grey;
+        font-size: 12px;
+        & span {
+          color: $--text-grey;
+        }
+      }
+    }
+  }
+}

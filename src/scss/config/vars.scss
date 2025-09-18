@@ -31,9 +31,14 @@ $--white: rgba(255, 255, 255, 1);
 $--text-color: rgba(11, 16, 20, 1);
 $--text-grey: rgba(123, 126, 129, 1);
 
+$--grey-hover: rgb(130, 132, 133);
+
 $--accent-color: rgba(73, 165, 249, 1);
+$--accent-color-hover: rgb(64, 141, 223);
 
 $--link-color: $--accent-color;
+
+$--transition: cubic-bezier(0.2, 0.8, 0.4, 1);
 
 
 

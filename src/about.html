@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+<body>
+@@include('html/header.html', {})
+<main class="main">
+    <div class="breadcrumb">
+        <div class="breadcrumb__container">
+            <div class="breadcrumb-inner">
+                <ul class="crumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="crumbs-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="crumbs-list__link" href="/" title="Главная" itemprop="item">
+                            <span itemprop="name">Главная</span>
+                            <meta itemprop="position" content="0">
+                        </a>
+                    </li>
+                    <li class="crumbs-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a class="crumbs-list__link" href="/" title="Главная" itemprop="item">
+                            <span itemprop="name">О нас</span>
+                            <meta itemprop="position" content="1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="about end-to-end">
+        <div class="about__container">
+            <div class="about-titleBx">
+                <h2 class="about__title h1">О нашей студии</h2>
+                <div class="about__tag">Студия Podcast Kultura открыта в марте 2025 года</div>
+            </div>
+            <div class="about-inner">
+                <div class="about-wrapper">
+                    <div class="about-quote">
+                        Привет! Меня зовут {name}, я основатель
+                        студии. Podcast Kultura – это мой четвертый
+                        проект в нише студий для записи контента,
+                        поэтому в нем собраны все преимущества и
+                        наблюдения, накопленные за 2 года в этом
+                        рынке и 10+ лет в видеопродакшене.
+                    </div>
+                    <div class="about-content">
+                        <p>На VC.ru опубликованы две статьи, в которых я описал
+                            процесс создания студий и что находится за кадром.</p>
+                        <div class="about-links">
+                            <a href="#" class="about-links__item">
+                                <p>
+                                    Как я подкаст-студию открывал. <br>
+                                    <span>Как я подкаст-студию открывал.</span>
+                                </p>
+                            </a>
+                            <a href="#" class="about-links__item">
+                                <p>
+                                    Как я подкаст-студию открывал. <br>
+                                    <span>Открытие 2 и 3 студии. Часть 2.</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-imgBx -ibg">
+                    <img src="images/about/main.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info section">
+        <div class="info__container">
+            <div class="info-inner">
+                <div class="info-main">
+                    <h2 class="info__title title_block">
+                        Услуги и <br>
+                        позиционирование
+                    </h2>
+                    <div class="info-content">
+                        <p>Студия предназначается для авторов блогов и их
+                            команд. Podcast Kultura – это готовое пространство,
+                            полностью оборудованное и готовое для записи любого
+                            контента.</p>
+                        <h3>Услуги нашей студии:</h3>
+                        <ul>
+                            <li>
+                                запись подкастов и reals под ключ (вместе с <br>
+                                оператором)
+                            </li>
+                            <li>проведение онлайн-трансляций и вебинаров</li>
+                            <li>аренда без обслуживание (вы работаете со своей
+                                командой)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-helper">
+                    <div class="info-wrapper">
+                        <div class="info-slider swiper">
+                            <div class="info-slider-wrapper swiper-wrapper">
+                                <div class="info__slide swiper-slide">
+                                    <div class="info__slide-imgBx -ibg">
+                                        <img src="images/about/1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-arrows arrows">
+                            <div class="info__arrow prev arrow">
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                            <div class="info__arrow next arrow">
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="info__pagination"></div>
+                    </div>
+                    <div class="info__notice">
+                        <p>Подпись к фото</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info section">
+        <div class="info__container">
+            <div class="info-inner">
+                <div class="info-main">
+                    <h2 class="info__title title_block">
+                        Изменение интерьера
+                    </h2>
+                    <div class="info-content">
+                        <p>Интерьер студии подготовлен опытным художником-
+                            постановщиком, но наполнение кадра можно менять под
+                            задачу клиента: от небольших изменений (поставить
+                            реквизит в кадр) до подготовки студии с нуля под
+                            запрос клиента, это обсуждается индивидуально.</p>
+                        <p>Несколько спец.проектов, со значительными
+                            изменениями интерьера под съемку клиента.</p>
+                    </div>
+                </div>
+                <div class="info-helper">
+                    <div class="info-wrapper arrow_to_slide">
+                        <div class="info-slider swiper">
+                            <div class="info-slider-wrapper swiper-wrapper">
+                                <div class="info__slide swiper-slide">
+                                    <div class="info__slide-imgBx -ibg">
+                                        <img src="images/about/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__slide swiper-slide">
+                                    <div class="info__slide-imgBx -ibg">
+                                        <img src="images/about/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__slide swiper-slide">
+                                    <div class="info__slide-imgBx -ibg">
+                                        <img src="images/about/1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-arrows arrows">
+                            <div class="info__arrow prev arrow">
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                            <div class="info__arrow next arrow">
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="info__pagination pagination"></div>
+                    </div>
+                    <div class="info__notice">
+                        <p>Подпись к фото</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section class="vacancy section">-->
+<!--        <div class="vacancy__container">-->
+<!--            <div class="vacancy-inner">-->
+<!--                <div class="vacancy-box">-->
+<!--                    <div class="vacancy__title title_block">-->
+<!--                        Открытие новых <br>-->
+<!--                        филиалов/франшиза-->
+<!--                    </div>-->
+<!--                    <div class="vacancy-content">-->
+<!--                        <p></p>-->
+<!--                        <p></p>-->
+<!--                    </div>-->
+<!--                    <button class="vacancy__button btn primary-button">-->
+<!--                        <span class="vacancy__button-icon">-->
+<!--                            <img src="images/socials/tg.svg" alt="">-->
+<!--                        </span>-->
+<!--                        Пишите @podcastkultura-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="vacancy-box">-->
+<!--                    <div class="vacancy__title title_block">Работа в нашей команде</div>-->
+<!--                    <div class="vacancy-content">-->
+<!--                        <p>Если хотите присоединится к нашей команде –посмотрите-->
+<!--                            страницу вакансии.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+</main>
+@@include('html/footer.html', {})
+@@include('html/script.html', {})
+</body>
+</html> 

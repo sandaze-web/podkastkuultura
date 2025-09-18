@@ -35,8 +35,10 @@
       & li {
         & a {
           color: rgba(99, 102, 105, 1);
-          transition: .4s;
-
+          transition: .4s $--transition;
+          &:hover {
+            color: $--text-color;
+          }
         }
       }
     }
@@ -49,6 +51,10 @@
   &__phone {
     font-weight: 500;
     color: $--link-color;
+    transition: .4s $--transition;
+    &:hover {
+      color: $--accent-color-hover;
+    }
   }
   &-socialsBx {
     display: flex;
@@ -58,6 +64,17 @@
   &-logoBx {
     width: 100%;
     padding: 16px 0;
+    display: block;
+  }
+
+  @include media(760) {
+    padding: 16px 0 0;
+    &-navBx {
+      display: none;
+    }
+    &-logoBx {
+      padding: 16px 0 0;
+    }
   }
 }
 // =====================================================================================================================

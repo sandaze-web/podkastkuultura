@@ -23,6 +23,12 @@ html{
   max-width: rem($containerWidth + $mainOffset * 2);
   margin: 0 auto;
   padding: 0 rem($mainOffset);
+  @include media(1360) {
+    padding: 0 64px;
+  }
+  @include media(760) {
+    padding: 0 14px;
+  }
 }
 // Стили отзывчивых картинок (IBG) ===================================================================================
 [class*="-ibg"] {

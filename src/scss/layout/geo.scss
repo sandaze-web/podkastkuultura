@@ -1,0 +1,30 @@
+.geo {
+  &-box {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+  }
+  &__item {
+    &-title {
+      display: flex;
+      align-items: center;
+      color: $--accent-color;
+      font-weight: 700;
+      font-size: 18px;
+      gap: 12px;
+    }
+    &-video {
+      border-radius: 25px;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+  }
+  @include media(760) {
+    &-box {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 16px;
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.about {
+  &-titleBx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__tag {
+    color: $--text-grey;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &:before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: $--accent-color;
+    }
+  }
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  &-imgBx {
+    height: 361px;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 507px;
+  }
+  &-wrapper {
+    max-width: 555px;
+  }
+  &-quote {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    position: relative;
+    padding-left: 72px;
+    &:before {
+      content: '';
+      display: block;
+      width: 37px;
+      height: 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='37' height='28' viewBox='0 0 37 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M29.8349 14.2393C31.8709 14.3989 33.5153 15.0769 34.7683 16.2735C36.0212 17.4701 36.6476 19.0655 36.6476 21.0598C36.6476 23.2935 35.982 25.0086 34.6508 26.2051C33.3196 27.4017 31.6751 28 29.7175 28C27.055 27.8405 25.1365 26.8433 23.9619 25.0086C22.7873 23.1738 22.2 21.0997 22.2 18.7863C22.2 16.5527 22.5132 14.4786 23.1397 12.5641C23.8444 10.6496 24.745 8.8547 25.8413 7.17949C26.9376 5.50428 28.1905 4.02849 29.6 2.75214C31.0878 1.47579 32.6148 0.558407 34.181 0L37 3.94872C35.4339 5.06553 33.946 6.5812 32.5365 8.49573C31.2053 10.4103 30.3048 12.3248 29.8349 14.2393ZM7.63492 14.2393C9.6709 14.3989 11.3153 15.0769 12.5683 16.2735C13.8212 17.4701 14.4476 19.0655 14.4476 21.0598C14.4476 23.2935 13.7429 25.0086 12.3333 26.2051C11.0021 27.4017 9.43598 28 7.63492 28C4.89418 27.9202 2.93651 26.963 1.7619 25.1282C0.587302 23.2137 0 21.0997 0 18.7863C0 16.5527 0.313228 14.4786 0.939683 12.5641C1.64444 10.6496 2.54497 8.8547 3.64127 7.17949C4.73757 5.50428 5.99048 4.02849 7.4 2.75214C8.88783 1.47579 10.4148 0.558407 11.981 0L14.8 3.94872C13.2339 5.06553 11.746 6.5812 10.3365 8.49573C9.00529 10.4103 8.10476 12.3248 7.63492 14.2393Z' fill='rgba(73, 165, 249, 1)' /%3e%3c/svg%3e");
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &-content {
+    color: $--text-grey;
+    padding-left: 72px;
+    margin-top: 40px;
+    & p {
+      color: $--text-grey;
+    }
+    & a {
+      color: $--text-grey;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      & span {
+        text-decoration: underline;
+        color: $--text-grey;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 38px;
+        height: 38px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(https://podcastkultura.ru/wp-content/themes/podcastkultura/css/%23clip0_2003_3688)'%3e%3cpath d='M0 33V19V5C0 2.23858 2.23858 0 5 0H33C35.7614 0 38 2.23858 38 5V33C38 35.7614 35.7614 38 33 38H5C2.23858 38 0 35.7614 0 33Z' fill='%23FDEBF0' /%3e%3cpath d='M28.0109 17.914C30.2192 17.914 31.8817 16.994 33.1075 15.3923L31.4692 14.1423C31.0645 14.6757 30.5415 15.1078 29.9413 15.4045C29.3412 15.7012 28.6803 15.8546 28.0109 15.8524C25.6142 15.8524 23.8775 13.8998 23.8775 11.504C23.8775 9.10817 25.5859 7.04569 28.0792 7.04569C29.1875 7.04569 29.9709 7.30735 30.6542 7.73068V9.83734H32.7158V6.76569L32.3208 6.45484C31.1875 5.56318 29.4567 5.08984 28.01 5.08984C24.4734 5.08984 21.5967 7.96652 21.5967 11.5032C21.5967 15.0365 24.4725 17.914 28.0109 17.914ZM32.2883 30.564L32.215 27.6115V20.4065H27.915V22.469H30.0434V27.3574C30.0434 29.4632 28.435 30.954 26.8125 30.954C25.19 30.954 24.3434 29.829 24.3434 27.724V20.4057H20.3267V22.4682H22.1717V28.0815C22.1717 30.9382 23.7734 32.9065 26.63 32.9065C28.2717 32.9065 29.5217 31.9957 30.2675 30.5915H30.3009L30.595 32.5548H33.8992V30.5665H32.2909V30.5624L32.2883 30.564ZM21.1217 5.39235H17.5384L14.4217 14.4423H14.3734L11.2734 5.39235H7.45502V7.45567H9.60252L13.2984 17.7707H15.2617V17.7682L19.1159 7.45651H21.12V5.39319L21.1217 5.39235ZM4.10168 32.5815H6.22502V30.459H4.10252L4.10168 32.5815ZM12.3017 22.7982H12.2784L12.145 20.4065H8.35502V22.2865H10.3717V30.5648H8.35502V32.554H17.7217V30.604H12.5067V25.6082C12.7425 23.7999 14.0984 22.2557 15.9484 22.2557H15.9817L15.9442 24.104H18.0059V20.3723H16.3759C14.5092 20.3673 13.1242 21.3773 12.3009 22.799L12.3017 22.7982Z' fill='black' /%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2003_3688'%3e%3crect width='38' height='38' fill='white' /%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+      }
+    }
+  }
+  @include media(760) {
+    &-titleBx {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &__tag {
+      max-width: 300px;
+    }
+    &-inner {
+      flex-direction: column;
+      margin-top: 32px;
+    }
+    &-imgBx {
+      height: 320px;
+    }
+    &-quote {
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      &:before {
+        position: static;
+        width: 26px;
+        height: 20px;
+        background-size: cover;
+        margin-bottom: 12px;
+      }
+    }
+    &-content {
+      padding-left: 0;
+      margin-top: 32px;
+    }
+  }
+}

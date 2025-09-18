@@ -1,0 +1,44 @@
+.schema {
+  &-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  &-imgBx {
+    width: 100%;
+    max-width: 870px;
+
+  }
+  &-counts {
+    flex-grow: 1;
+    counter-reset: li-counter;
+    & li {
+      counter-increment: li-counter; /* увеличиваем счётчик для каждого li */
+      position: relative;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(244, 247, 249, 1);
+      &:before {
+        content: counter(li-counter, decimal-leading-zero); /* добавляем 01, 02, 03 */
+        color: $--accent-color;
+        font-weight: bold;
+        margin-right: 16px;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  @include media(760) {
+    &-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-counts {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

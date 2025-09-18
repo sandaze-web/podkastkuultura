@@ -1,0 +1,37 @@
+.requisites {
+  &__title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:after {
+      content: '\f107';
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 400;
+      font-size: 21px;
+      margin-left: 10px;
+      transition: .4s $--transition;
+    }
+  }
+  &-titleBx {
+    &.active {
+      & .requisites__title {
+        &:after {
+          transform: scale(1, -1);
+        }
+      }
+    }
+  }
+  &__items {
+    margin-top: 20px;
+    transition: .4s $--transition;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    & span {
+      font-size: 18px;
+      color: $--text-grey;
+    }
+  }
+}
